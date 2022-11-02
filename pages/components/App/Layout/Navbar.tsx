@@ -31,7 +31,7 @@ function Navbar() {
 		}
 	}, [focus, search]);
 	return (
-		<nav className="border-b-2 sticky top-0 bg-neutral-50">
+		<nav className="z-50 border-b-2 sticky top-0 bg-neutral-50">
 			<div className=" max-w-5xl mx-auto  p-3 flex justify-between items-center">
 				<div className=" font-semibold">
 					<span className=" font-design mr-1">MilkUI</span>
@@ -51,7 +51,7 @@ function Navbar() {
 							value={search}
 							onChange={(e) => setSearch(e.target.value)}
 							placeholder="Search..."
-							className="text-sm outline-none border-2 focus:border-accent-500  px-3 py-2 rounded-md font-normal"
+							className="text-sm outline-none border-2 focus:border-sky-500  px-3 py-2 rounded-md font-normal"
 						/>
 
 						{focus && (
@@ -66,7 +66,7 @@ function Navbar() {
 											className="cursor-pointer text-sm capitalize flex justify-between rounded-lg py-2 px-3 hover:bg-neutral-200"
 										>
 											<span>{item.name}</span>
-											<span className="bg-accent-500 px-2 rounded-full text-white">
+											<span className="bg-red-500 px-2 rounded-full text-white">
 												{item.components}
 											</span>
 										</li>
